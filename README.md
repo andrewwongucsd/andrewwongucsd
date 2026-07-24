@@ -35,8 +35,8 @@ An LLM **incident-triage agent** on LangGraph. Reads an incident, calls tools
 (logs / metrics / dependency map), returns a structured diagnosis: root cause +
 which team to escalate to.
 
-The agent is the easy half. It ships with a **34-case labeled benchmark**, a
-**validated judge** (measured against 15 human labels via Cohen's κ), and a
+The agent is the easy half. It ships with a **hand-labeled incident benchmark**,
+a **validated judge** (measured against human labels via Cohen's κ), and a
 **CI gate that fails the build when quality regresses**.
 
 `Python` · `LangGraph` · `Claude` · `pytest`

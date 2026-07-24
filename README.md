@@ -65,7 +65,8 @@ managed Postgres, and passwordless magic-link auth.
 A container runtime built from scratch to learn what Docker sits on top of:
 namespaces via `clone(2)`, cgroups v2 limits, `pivot_root` filesystem isolation.
 
-> ⚗️ Learning prototype — scaffolded, kernel calls in progress.
+Working end to end — `minirun run` gives you a shell that thinks it's PID 1,
+sees only its own rootfs, and is capped at the memory and CPU you asked for.
 
 `Go` · `Linux internals`
 
@@ -76,9 +77,9 @@ namespaces via `clone(2)`, cgroups v2 limits, `pivot_root` filesystem isolation.
 
 A distributed task scheduler built from scratch to learn the control-plane logic
 Kubernetes abstracts: heartbeat liveness, Filter → Score → Bind placement,
-rescheduling on worker death.
+priority preemption, and rescheduling when a worker dies.
 
-> ⚗️ Learning prototype — scaffolded, placement logic in progress.
+Complete and tested — kill a worker mid-task and its work lands somewhere else.
 
 `Go` · `Distributed systems`
 

@@ -84,8 +84,8 @@ Kubernetes abstracts: heartbeat liveness, Filter → Score → Bind placement,
 priority preemption, and rescheduling when a worker dies.
 
 Complete and tested — kill a worker mid-task and its work lands somewhere else.
-**[Watch it happen](https://andrewwongucsd.github.io/mini-scheduler/)** in the
-dashboard, replaying a real recorded run.
+**[Watch it happen live](https://mini-scheduler.leetcodewarrior.com/)**: the
+cluster kills one of its own workers every 45 seconds, on a free-tier ARM node.
 
 `Go` · `Distributed systems`
 
